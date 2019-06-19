@@ -35,5 +35,5 @@ All while loops were changed to monitor timeout.
 | Function | Changes |
 |---|---|
 | `twi_readFrom()` | returns 0 bytes read on timeout
-| `twi_writeTo()`  | returns 4, which is described as "other twi error" in the original library |
+| `twi_writeTo()`  | returns 4 on timeout, which is described as "other twi error" in the original library |
 | `twi_stop()`     | made to return a bool. returns false on timeout |
