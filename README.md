@@ -16,7 +16,8 @@ Tested using generic DS3231 module with 32kbit EEPROM.
 | 7 | connected    | disconnected | disconnected | **BLOCKS/HANGS** |
 | 8 | connected    | connected    | disconnected | **BLOCKS/HANGS** |
 
-If the SDA/SCL lines are accidentally disconnected the original Wire.h is able to detect the error. However if the power is cut, it blocks on the call to `Wire.endTransmission()`.
+If the SDA/SCL lines are accidentally disconnected the original Wire.h is able to detect the error.
+However if the power is cut, it blocks on the call to `Wire.endTransmission()`.
 
 This version will instead return an error after a specified timeout.
 
