@@ -59,7 +59,7 @@
     
   void twi_releaseBus(void);
 
-    // === MODIFIED ===
+    // === ADDED/MODIFIED ===
     void twi_setTimeout( uint16_t timeout );
 
 #endif
