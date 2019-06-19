@@ -677,7 +677,7 @@ ISR(TWI_vect)
   }
 }
 
-// === MODIFIED ===
+// === ADDED/MODIFIED ===
 void twi_setTimeout( uint16_t timeout ) {
     TIMEOUT = timeout;
 }
