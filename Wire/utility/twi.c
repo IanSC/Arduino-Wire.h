@@ -246,7 +246,7 @@ uint8_t twi_readFrom(uint8_t address, uint8_t* data, uint8_t length, uint8_t sen
         while( TWI_MRX == twi_state ) {
             _delay_ms( TIMEOUT_TICK );
             timeoutCounter--;
-            if( timeoutCounter == 0 ) return 4;
+            if( timeoutCounter == 0 ) return 0;
         }
     }
     /*
