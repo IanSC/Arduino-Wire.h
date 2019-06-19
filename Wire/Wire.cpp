@@ -326,7 +326,7 @@ void TwoWire::onRequest( void (*function)(void) )
   user_onRequest = function;
 }
 
-// === MODIFIED ===
+// === ADDED/MODIFIED ===
 void TwoWire::setTimeout( uint16_t timeout ) {
     twi_setTimeout( timeout );
 }
